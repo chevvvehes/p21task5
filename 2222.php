@@ -1,12 +1,6 @@
 <?php
 declare(strict_types=1);
 
-/**
- * Проверяет, является ли число совершенным.
- *
- * @param int $number Положительное целое число
- * @return bool true, если число совершенное
- */
 function isPerfectNumber(int $number): bool {
     if ($number <= 1) {
         return false;
@@ -22,12 +16,6 @@ function isPerfectNumber(int $number): bool {
     return $sum === $number;
 }
 
-/**
- * Ищет совершенные числа в массиве.
- *
- * @param array $numbers Массив положительных целых чисел
- * @return array Массив совершенных чисел
- */
 function findPerfectNumbers(array $numbers): array {
     $perfectNumbers = [];
 
@@ -40,7 +28,7 @@ function findPerfectNumbers(array $numbers): array {
     return $perfectNumbers;
 }
 
-// Пример использования:
+// Пример:
 $input = [6, 28, 12, 496, 100, 8128];
 $result = findPerfectNumbers($input);
 
